@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="top">
+        <img class="logo" src="https://hotel-am-helmwartsturm.de/files/cto_layout/themedesigner/uploads/logo-2.png"
+            alt="">
+        <h2>LIEBE GÄSTE...</h2>
+        <p>Wir wünschen Ihnen einen schönen Aufenthalt bei uns und möchten Ihnen hiermit auf einfachem Wege verschiedene
+            Informationen bereitstellen. </p>
+    </div>
+
+    <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40671.61811424312!2d7.315130144805235!3d50.422916326084945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47be6006a70b49c9%3A0x3a243da9b78cf02!2sHotel%20Am%20Helmwartsturm!5e0!3m2!1sde!2sde!4v1683235922863!5m2!1sde!2sde"
+        height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <div class="rezeption-div">
+        <h1>REZEPTION</h1>
+        <p class="öffnungszeiten">06.00 - 18.00 Uhr geöffnet </p>
+        <div class="check-in-out-div">
+            <p> <b>Check-In:</b> 14.00 - 18.00 Uhr</p>
+            <p> <b>Check-Out:</b> bis 11.00 Uhr</p>
+        </div>
+        <p> <b>Wichtiger Hinweis:</b> </p>
+        <p>Andere Check-in und Check-Out-Zeiten sind nach Absprache möglich.</p>
+        <p>Bitte informieren Sie uns im Voraus.</p>
+    </div>
+
+    <img class="rezeption-img" src="https://hotel-am-helmwartsturm.de/assets/images/a/IMG_2503-6be9a3b8.jpg" />
+
+    <div class="frühstück-div">
+        <h1>FRÜHSTÜCKSBUFFET</h1>
+        <div class="frühstück-zeiten">
+            <p>Montags bis Freitags von <br>07.00 Uhr bis 10.00 Uhr</p>
+            <p>Samstags, Sonn- und Feiertags von <br>08.00 Uhr bis 10.30 Uhr</p>
+        </div>
+        <p>Für Frühaufsteher gibt es nach Absprache ein Early Bird-Frühstück im Hause oder ein Lunch-Paket für
+            unterwegs.</p>
+    </div>
+    <img class="frühstück-img" src="https://hotel-am-helmwartsturm.de/assets/images/6/AD4A9236-be389b06.jpg" alt="">
+    <div class="snacks-div">
+    <h1>SNACKS UND GETRÄNKE</h1>
+    <p>Für den kleinen Hunger zwischendurch reichen wir unseren Gästen während der Rezeptionszeiten Snacks und Getränke
+        an der Bar.</p>
+    </div>
+    <div class="restaurants-div">
+    <h1>RESTAURANT-TIPPS</h1>
+    <p>Sie möchten lecker Essen gehen? Fragen Sie uns, wir sind Ihnen gerne bei der Auswahl eines passenden Restaurants
+        in der Nähe behilflich.</p>
+        <button id="toggle-restaurants-btn">Tipps anzeigen
+            <span id="toggle-icon-restaurants" class="material-symbols-outlined toggle-icon">
+                expand_more
+                </span>
+        </button>
+        <ul style="display: none;" id="restaurant-list">
+            <li><a href="https://www.restaurant-lamer.de" target="blank">
+                Unterwasser Restaurant Lamer 
+            </a></li>
+            <li>2</li>
+        </ul>
+    </div>
+ 
+    <div class="ausflusgziele-div">
+        <h1 id="ausflugsziele-h1">AUSFLUGZIELE IN UNSERER UMGEBUNG:</h1>
+        <button id="toggle-ausflugsziele-btn">Ausflugsziele anzeigen
+            <span id="toggle-icon-ausflugsziele" class="material-symbols-outlined toggle-icon">
+                expand_more
+                </span>
+        </button>
+        <ul id="ausflugsziele-list" style="display: none;" >
+            <li>
+                <a href="https://www.geysir-andernach.de/" target="_blank">Geysir Andernach:</a>
+                Der Geysir Andernach ist der höchste Kaltwassergeysir der Welt.
+            </li>
+            <li>
+                <a href="https://www.vulkanpark.com/" target="_blank">Vulkanpark:</a>
+                Der Vulkanpark im Kreis Mayen-Koblenz präsentiert den Besuchern den ruhenden Vulkanismus der Eifel sowie
+                das Leben der Menschen mit und von den Vulkanen.
+            </li>
+            <li>
+                <a href="https://www.vulkan-express.de/" target="_blank">Vulkan-Express:</a>
+                Schmalspurbahn mit Dampfbetrieb
+            </li>
+            <li>
+                <a href="https://www.nuerburgring.de/" target="_blank">Nürburgring</a>
+                Rennstrecke in Nürburg
+            </li>
+            <li>
+                <a href="https://de.wikipedia.org/wiki/Deutsches_Eck" target="_blank">Deutsches Eck</a>
+                Das Deutsche Eck ist eine Landzunge an der Mündung der Mosel in den Rhein in Koblenz. Seit 2002 ist es
+                Teil des von der UNESCO ausgezeichneten Weltkulturerbes Oberes Mittelrheintal.
+            </li>
+            <li>
+                <a href="https://burg-eltz.de/de/startseite" target="_blank">Burg Eltz</a>
+                Einer der schönsten und besterhaltenen Burgen Deutschlands.
+            </li>
+            <li>
+                <a href="https://tor-zum-welterbe.de/de/schloss-stolzenfels/" target="_blank">Schloss Stolzenfels</a>
+                Heute gilt Schloss Stolzenfels, das durch seinen ockerfarbenen Anstrich und seine Zinnen weithin
+                sichtbar ist, als vollkommenes Beispiel damaliger Rheinromantik.
+            </li>
+            <li>
+                <a href="https://www.maria-laach.de/" target="_blank">Benedektinerabtei Maria Laach</a>
+                Die Abtei Maria Laach befindet sich in der jüngsten Landschaft Europas, der Vulkaneifel. Um 10 000 v.
+                Chr. entstand durch Vulkanismus der Laacher See und die ihn umgebende Hügelkette.
+            </li>
+            <li>
+                <a href="https://tor-zum-welterbe.de/de/kulturzentrum-festung-ehrenbreitstein/" target="_blank">Festung
+                    Ehrenbreistein</a>
+                Die Festung Ehrenbreitstein ist eine seit dem 16. Jahrhundert bestehende, ursprünglich kurtrierische,
+                später preußische Befestigungsanlage gegenüber der Moselmündung bei Koblenz.
+                Festung Ehrenbreitstein ist die zweitgrößte erhaltene Festung Europas.
+            </li>
+        </ul>
+    </div>
+    <img class="rhein-img"
+        src="https://images.unsplash.com/photo-1675875133135-7e22d7b67a73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" />
+
+
+</body>
+
+</html>

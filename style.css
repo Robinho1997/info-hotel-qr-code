@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@500;700&family=Saira+Condensed:wght@500&display=swap');
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(237, 233, 233);  
+}
+
+h1,h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+img {
+    width: 100%;  
+}
+
+a {
+    color: #555;
+}
+
+button {
+    cursor: pointer;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 3%;
+    justify-content: center;
+    text-align: center;
+    color: #4b3d31;   
+}
+
+.top h2 {
+   margin-bottom: 0;
+   font-weight: normal;
+}
+
+.logo {
+    width: 50vw;
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+
+
+.map {
+    width: 100vw;
+}
+
+.rezeption-div  {
+    margin-top: -2px;
+    padding-top: 0;
+    padding: 5%;
+    background-color: rgb(237, 233, 233);   
+}
+
+.öffnungszeiten {
+    border-radius: 2px;
+    background-color: #8a7766;
+    color: whitesmoke;
+    width: fit-content;
+    padding: 0px 10px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.check-in-out-div {
+    margin-block: 20px;
+}
+
+.check-in-out-div * {
+    margin-block: 5px;
+}
+
+ .frühstück-div {
+    line-height: 1.8;
+    padding-inline: 5%;
+}
+
+.frühstück-zeiten {
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.snacks-div, .restaurants-div, .ausflusgziele-div {
+    padding-inline: 5%;
+}
+
+.ausflusgziele-div {
+    line-height: 1.8;
+}
+
+
+.ausflusgziele-div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+#toggle-restaurants-btn, #toggle-ausflugsziele-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a7766;
+    color: whitesmoke;
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.rhein-img {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
