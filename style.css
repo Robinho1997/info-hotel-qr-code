@@ -142,3 +142,18 @@ button {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
+footer {
+    background-color: #8a7766;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
