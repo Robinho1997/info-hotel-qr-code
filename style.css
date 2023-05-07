@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@500;700&family=Saira+Condensed:wght@500&display=swap');
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: rgb(237, 233, 233);  
+    background-color: rgb(237, 233, 233);
 }
 
-h1,h2 {
+h1,
+h2 {
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 500;
     margin-bottom: 0px;
 }
 
 img {
-    width: 100%;  
+    width: 100%;
 }
 
 a {
@@ -32,12 +34,12 @@ button {
     margin-inline: 3%;
     justify-content: center;
     text-align: center;
-    color: #4b3d31;   
+    color: #4b3d31;
 }
 
 .top h2 {
-   margin-bottom: 0;
-   font-weight: normal;
+    margin-bottom: 0;
+    font-weight: normal;
 }
 
 #switch-language-btn {
@@ -52,7 +54,7 @@ button {
 }
 
 #switch-language-btn img {
-   width: 20px;
+    width: 20px;
 }
 
 .logo {
@@ -61,16 +63,15 @@ button {
     border-bottom: 1px solid;
 }
 
-
 .map {
     width: 100vw;
 }
 
-.rezeption-div  {
+.rezeption-div {
     margin-top: -2px;
     padding-top: 0;
     padding: 5%;
-    background-color: rgb(237, 233, 233);   
+    background-color: rgb(237, 233, 233);
 }
 
 .öffnungszeiten {
@@ -81,11 +82,8 @@ button {
     padding: 0px 10px;
     font-size: 1.2rem;
     line-height: 1.8;
-  min-width: 70%;
-
+    min-width: 70%;
 }
-
-
 
 .margin-top {
     margin-top: 50px;
@@ -99,7 +97,7 @@ button {
     margin-block: 5px;
 }
 
- .frühstück-div {
+.frühstück-div {
     line-height: 1.8;
     padding-inline: 5%;
 }
@@ -109,14 +107,17 @@ button {
     margin-bottom: 40px;
 }
 
-.snacks-div, .restaurants-div, .ausflusgziele-div {
+.snacks-div,
+.restaurants-div,
+.ausflusgziele-div,
+.garage-info-div {
     padding-inline: 5%;
 }
 
-.ausflusgziele-div {
+.ausflusgziele-div,
+.garage-info-div {
     line-height: 1.8;
 }
-
 
 .ausflusgziele-div ul {
     display: flex;
@@ -124,9 +125,12 @@ button {
     gap: 10px;
 }
 
+#restaurant-list li {
+    margin-block: 40px;
+}
 
-
-#toggle-restaurants-btn, #toggle-ausflugsziele-btn {
+#toggle-restaurants-btn,
+#toggle-ausflugsziele-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,6 +139,7 @@ button {
     border: none;
     padding: 7px;
     border-radius: 3px;
+    margin-block: 30px;
 }
 
 .rhein-img {
@@ -157,3 +162,20 @@ footer {
     text-decoration: none;
 }
 
+.restaurant-beschreibung {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+a {
+    text-underline-offset: 3px;
+}
+
+.phone-icon {
+    display: flex;
+    margin-top: -12px;
+    gap: 10px;
+    align-items: center;
+}
