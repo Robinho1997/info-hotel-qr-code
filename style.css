@@ -67,11 +67,11 @@ button {
     width: 100vw;
 }
 
-.rezeption-div {
+.rezeption-div{
     margin-top: -2px;
     padding-top: 0;
-    padding: 5%;
-    background-color: rgb(237, 233, 233);
+    padding-block: 5%;
+
 }
 
 .öffnungszeiten {
@@ -97,10 +97,6 @@ button {
     margin-block: 5px;
 }
 
-.frühstück-div {
-    line-height: 1.8;
-    padding-inline: 5%;
-}
 
 .frühstück-zeiten {
     font-weight: 500;
@@ -110,15 +106,26 @@ button {
 .snacks-div,
 .restaurants-div,
 .ausflusgziele-div,
-.garage-info-div {
+.garage-info-div,
+.frühstück-div,
+.rezeption-div {
     padding-inline: 5%;
-}
-
-.ausflusgziele-div,
-.garage-info-div {
     line-height: 1.8;
 }
 
+
+
+.garage-info-div {
+    margin-bottom: 40px;
+}
+
+.img {
+    max-width: 90vw;
+     margin: 5vw;
+     border-radius: 5px;
+     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+  
 .ausflusgziele-div ul {
     display: flex;
     flex-direction: column;
@@ -139,7 +146,18 @@ button {
     border: none;
     padding: 7px;
     border-radius: 3px;
+}
+
+#toggle-restaurants-btn {
     margin-block: 30px;
+}
+
+#toggle-ausflugsziele-btn {
+    margin-top: 30px;
+}
+
+.geysir-andernach {
+    margin-top: 30px;
 }
 
 .rhein-img {
