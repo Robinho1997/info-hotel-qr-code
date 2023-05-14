@@ -17,14 +17,14 @@ let isGerman = false;
 
 
 toggleRestaurantsBtn.addEventListener("click", () =>
-  toggleRestaurants(restaurantList, toggleIconRestaurant)
+toggleList(restaurantList, toggleIconRestaurant)
 );
 toggleAusflugszieleBtn.addEventListener("click", () =>
-  toggleRestaurants(ausflugsZieleList, toggleIconAusflugsziele)
+toggleList(ausflugsZieleList, toggleIconAusflugsziele)
 );
 switchLanguageBtn.addEventListener("click", toggleLanguage)
 
-function toggleRestaurants(list, icon) {
+function toggleList(list, icon) {
   if (list.style.display === "none") {
     list.style.display = "block";
     icon.innerHTML = "expand_less";
@@ -33,6 +33,7 @@ function toggleRestaurants(list, icon) {
     icon.innerHTML = "expand_more";
   }
 }
+
 toggleLanguage()
 function toggleLanguage() {
     if(isGerman) {
