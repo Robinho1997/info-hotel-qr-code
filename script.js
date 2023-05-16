@@ -9,20 +9,19 @@ const toggleIconAusflugsziele = document.getElementById(
 );
 const ausflugsZieleList = document.getElementById("ausflugsziele-list");
 
-const switchLanguageBtn = document.getElementById("switch-language-btn");
 const langGerman = document.querySelectorAll('[lang="de"]');
 const langEnglish = document.querySelectorAll('[lang="en"]');
 let isGerman = false;
 
-
-
+const switchLanguageCheckbox = document.getElementById("switch-language-checkbox");
+switchLanguageCheckbox.addEventListener("click", toggleLanguage)
 toggleRestaurantsBtn.addEventListener("click", () =>
 toggleList(restaurantList, toggleIconRestaurant)
 );
 toggleAusflugszieleBtn.addEventListener("click", () =>
 toggleList(ausflugsZieleList, toggleIconAusflugsziele)
 );
-switchLanguageBtn.addEventListener("click", toggleLanguage)
+
 
 function toggleList(list, icon) {
   if (list.style.display === "none") {

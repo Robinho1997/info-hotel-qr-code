@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Hotel am Helmwartsturm</title>
 </head>
 
 <body>
-
-    <div class="top">
-        <button id="switch-language-btn"><img src="/icons/germany.png">/ <img src="/icons/united-kingdom.png"></button>
+    <div class="top">  
+        <label class="switch">
+            <input id="switch-language-checkbox" type="checkbox">
+            <span class="slider round"> 
+                <img class="germany-icon" src="icons/germany.png"/>
+                <img class="england-icon" src="icons/united-kingdom.png"/>
+            </span>
+        </label>
+    
         <img class="logo" src="https://hotel-am-helmwartsturm.de/files/cto_layout/themedesigner/uploads/logo-2.png"
             alt="">
         <h2> <span lang="de">LIEBE GÄSTE...</span><span lang="en">DEAR GUESTS...</span></h2>
@@ -47,8 +56,12 @@
             <span lang="de">Montag - Freitag</span>
             <span lang="en">Monday - Friday</span>
         <p>
-            <span lang="de">06.00 - 18.00 Uhr geöffnet</span>
-            <span lang="en">open 6.00 a.m - 6.00 p.m </span>
+            <span lang="de">06.00 - 12:00 Uhr geöffnet</span>
+            <span lang="en">open 6.00 a.m - 12.00 a.m </span>
+            <br>
+            <span lang="de">15.00 - 18.00 Uhr geöffnet</span>
+            <span lang="en">open 3.00 p.m - 6.00 p.m</span>
+            <br>
         </p>
         </p>
         <p>
@@ -61,12 +74,8 @@
             <span lang="en">Saturday</span>
         </p>
         <p>
-            <span lang="de">07.00 - 12.00 Uhr geöffnet</span>
-            <span lang="en">open 7.00 a.m - 12.00 a.m</span>
-            <br>
-            <span lang="de">14.00 - 18.00 Uhr geöffnet</span>
-            <span lang="en">open 2.00 p.m - 6.00 p.m</span>
-            <br>
+            <span lang="de">07.00 - 18.00 Uhr geöffnet</span>
+            <span lang="en">open 7.00 a.m - 6.00 p.m</span>
         </p>
 
         <p>
@@ -86,8 +95,8 @@
         </p>
         <p>
             <b>Check-In:</b>
-            <span lang="de">07.00 - 14.00 Uhr</span>
-            <span lang="en"> 7.00 a.m - 2.00 p.m</span>
+            <span lang="de">12.00 - 14.00 Uhr</span>
+            <span lang="en"> 12.00 a.m - 2.00 p.m</span>
         </p>
 
         <p class="margin-top">
@@ -117,12 +126,12 @@
 
     <div class="frühstück-div">
         <h1>
-            <span lang="de"> FRÜHSTÜCKSBUFFET</span>
+            <span lang="de">FRÜHSTÜCKSBUFFET</span>
             <span lang="en">BREAKFAST BUFFET</span>
         </h1>
         <div class="frühstück-zeiten">
             <p>
-                <span lang="de">Montags bis Freitags von <br>07.00 Uhr bis 10.00 Uhr</span>
+                <span lang="de">Montag bis Freitag von <br>07.00 Uhr bis 10.00 Uhr</span>
                 <span lang="en"> Monday to Friday from <br>7.00 a.m to 10.00 a.m</span>
             </p>
             <p>
@@ -134,8 +143,8 @@
             <span lang="de">Für Frühaufsteher gibt es nach Absprache ein Early Bird-Frühstück im Hause oder ein
                 Lunch-Paket für unterwegs.
                 <br><br>
-                Falls sie laktosefreie oder glutenfreie Produkte zum Frühstück benötigen, geben Sie uns bitte Bescheid,
-                wir besorge diese gerne für Sie.
+                Falls Sie laktosefreie oder glutenfreie Produkte zum Frühstück benötigen, geben Sie uns bitte Bescheid,
+                wir besorgen diese gerne für Sie.
             </span>
             <span lang="en">
                 For early risers there is an early bird breakfast in the house or a packed lunch for traveling.
@@ -153,10 +162,9 @@
         </h1>
         <p>
             <span lang="de">
-                Sie dürfen sich gerne in unserer Lobby an dem Getränkekühlschrank bedienen.
+                Sie dürfen sich gerne in unserer Lobby am Getränkekühlschrank bedienen.
                 Eine kleine Nespresso-Maschine und Wasserkocher für Tee dürfen Sie gerne nutzen.
-                Dort liegt eine Liste aus, in der Sie sich bitte eintragen mit Ihrer Zimmernummer, damit Sie bei
-                Check-Out die Getränke und Snacks bezahlen können.
+                Dort liegt eine Liste aus, in der Sie sich mit Ihrer Zimmernummer bitte eintragen!
             </span>
             <span lang="en">
                 You are welcome to use the drinks fridge in our lobby.
@@ -625,13 +633,36 @@
     <img class="rhein-img img"
         src="https://images.unsplash.com/photo-1675875133135-7e22d7b67a73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" />
     <div class="garage-info-div">
-        <h1><span lang="de">
+        <h2>
+            <span lang="de">Liebe Fahraddfahrer,</span>
+            <span lang="en">Dear bike riders,</span>
+        </h2>
+        <p>
+            <span lang="de">
+                Sie dürfen gerne kostenfrei Ihre Fahrräder in unserer abschließbaren Garage unterstellen. <br>
+                Der Schlüssel für die Garage befindet sich hinter der Rezeption. Sie dürfen sich diesen dort
+                selbstverständlich
+                wegnehmen! <br>
+                Wir bitten Sie den Schlüssel auch dort wieder zu deponieren, falls noch andere Gäste Ihre Fahrräder
+                unterstellen möchten!
+            </span>
+            <span lang="en">
+                You are welcome to store your bicycles in our lockable garage free of charge. <br>
+                The key for the garage is behind the reception. You can take it yourself there.
+                We ask you to deposit the key there again if other guests want to store their bikes!
+            </span>
+        </p>
+
+    </div>
+    <div class="garage-info-div">
+        <h2>
+            <span lang="de">
                 Unsere Garage:
             </span>
             <span lang="en">
                 Our garage:
             </span>
-        </h1>
+        </h2>
         <p>
             <span lang="de">
                 Sie gehen von der Eingangstür des Hotels rechts Richtung Stadtgraben, auf der rechten Seite befindet
@@ -651,24 +682,6 @@
     </div>
     <img class="img" src="/icons/garage.png">
     <div class="garage-info-div">
-        <h2>
-            <span lang="de">Liebe Fahraddfahrer,</span>
-            <span lang="en">Dear bike riders,</span>
-        </h2>
-        <p>
-            <span lang="de">
-                sie dürfen gerne kostenfrei Ihre Fahrräder in unserer abschließbaren Garage unterstellen. <br>
-                Der Schlüssel für die Garage befindet sich hinter der Rezeption. Sie dürfen sich den dort selbstständig
-                nehmen. <br>
-                Wir bitten Sie den Schlüssel dort auch wieder zu deponieren, falls noch andere Gäste Ihre Fahrräder
-                unterstellen möchten!
-            </span>
-            <span lang="en">
-                You are welcome to store your bicycles in our lockable garage free of charge. <br>
-                The key for the garage is behind the reception. You can take it yourself there.
-                We ask you to deposit the key there again if other guests want to store their bikes!
-            </span>
-        </p>
         <h2>
             <span lang="de">Info für E-Bikes:
             </span>
